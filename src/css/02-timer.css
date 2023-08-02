@@ -1,0 +1,26 @@
+.section-timer{
+    padding-left: 50px;
+    padding-top: 30px;
+}
+
+.timer {
+    padding-top: 30px;
+    display: flex;
+    gap: 18px;
+}
+.field {
+    display: flex;
+    flex-direction: column;
+   
+    align-items: center;
+
+
+}
+
+.value {
+    font-size: 70;
+    font-weight: 500;
+}
+.label {
+    font-size: 14px;
+}
