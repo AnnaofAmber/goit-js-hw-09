@@ -3,6 +3,44 @@
     padding-top: 30px;
 }
 
+.input {
+    border: 2px solid rgba(165, 75, 42, 0.367);
+    border-radius: 10px;
+    height: 50px;
+    text-align: center;
+    color: rgba(103, 43, 22, 0.91);
+}
+.input:focus{
+    border: -2px transparent;
+    outline: 2px solid rgba(115, 53, 30, 0.681);
+    
+}
+
+.btn {
+    margin-left: 20px;
+    border: 2px solid rgba(165, 75, 42, 0.367);
+    border-radius: 10px;
+    height: 50px;
+    width: 100px;
+    background-color: rgba(251, 242, 221, 0.516);
+    color: rgba(165, 75, 42, 0.91);
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    color: rgb(115, 53, 30);
+    border: 2px solid rgba(115, 53, 30, 0.681);
+    background-color: rgba(248, 237, 209, 0.367);;
+    
+}
+.btn:focus {
+    color: rgb(115, 53, 30);
+    border: 2px solid rgba(115, 53, 30, 0.681);
+    background-color: rgba(248, 237, 209, 0.367);
+    
+}
+
 .timer {
     padding-top: 30px;
     display: flex;
@@ -20,7 +58,9 @@
 .value {
     font-size: 70;
     font-weight: 500;
+    color: rgba(103, 43, 22, 0.91);
 }
 .label {
     font-size: 14px;
+    color: rgba(138, 64, 37, 0.91);
 }
