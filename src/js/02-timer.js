@@ -25,7 +25,9 @@ const options = {
             Notiflix.Notify.failure("Please choose a date in the future")
         } else{
             btnStart.disabled = false;
-         
+            btnStart.classList.toggle('btnActive')
+            
+            
         }
     },
   };
@@ -72,6 +74,8 @@ const options = {
         minutesLable.textContent = minutesWithZero;
         secondsLable.textContent = secondsWithZero;
     }
+    btnStart.classList.remove('btnActive')
+    input.classList.remove('inputActive')
   }
 
   btnStart.addEventListener('click', () => {

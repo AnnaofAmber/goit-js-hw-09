@@ -9,12 +9,22 @@
     height: 50px;
     text-align: center;
     color: rgba(103, 43, 22, 0.91);
+    transition-property: outline;
+  transition-duration: 300ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.input:focus{
-    border: -2px transparent;
+.inputActive:focus{
     outline: 2px solid rgba(115, 53, 30, 0.681);
+    outline-offset: -2px;
+    
     
 }
+
+.inputActive:hover{
+    outline: 2px solid rgba(115, 53, 30, 0.681);
+    outline-offset: -2px;
+}
+
 
 .btn {
     margin-left: 20px;
@@ -26,18 +36,25 @@
     color: rgba(165, 75, 42, 0.91);
     font-size: 20px;
     cursor: pointer;
+    transition-property: border, color, background-color, box-shadow;
+  transition-duration: 300ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.btn:hover {
+.btnActive:hover {
     color: rgb(115, 53, 30);
-    border: 2px solid rgba(115, 53, 30, 0.681);
-    background-color: rgba(248, 237, 209, 0.367);;
+    border: 2px solid rgba(115, 53, 30, 0.395);
+    background-color: rgba(248, 237, 209, 0.367);
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
     
 }
-.btn:focus {
+.btnActive:focus {
     color: rgb(115, 53, 30);
-    border: 2px solid rgba(115, 53, 30, 0.681);
+    border: 2px solid rgba(115, 53, 30, 0.395);
     background-color: rgba(248, 237, 209, 0.367);
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
     
 }
 
